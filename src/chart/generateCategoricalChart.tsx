@@ -2262,7 +2262,7 @@ export const generateCategoricalChart = ({
 
       const events = this.parseEventsOfWrapper();
       return (
-        <div
+        <span
           className={classNames('recharts-wrapper', className)}
           style={{ position: 'relative', cursor: 'default', width, height, ...style }}
           {...events}
@@ -2277,7 +2277,7 @@ export const generateCategoricalChart = ({
           </Surface>
           {this.renderLegend()}
           {this.renderTooltip()}
-        </div>
+        </span>
       );
     }
   };
